@@ -21,8 +21,8 @@ struct DiscoverCardView: View {
             } placeholder: {
                 Color.red
             }
+            .scaledToFill()
             .frame(height: 150)
-            .scaledToFit()
             .clipped()
             
             VStack(alignment: .leading, spacing: 12) {
@@ -35,7 +35,7 @@ struct DiscoverCardView: View {
                 } label : {
                     Text(buttonType)
                         .fontWeight(.bold)
-                        .padding()
+                        .padding(12)
                         .background(
                             RoundedRectangle(cornerRadius: 8)
                                 .strokeBorder(lineWidth: 1)

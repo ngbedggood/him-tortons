@@ -8,27 +8,33 @@
 import SwiftUI
 
 struct DiscoverView: View {
+    
     var body: some View {
-        ScrollView {
-            VStack {
-                HStack {
-                    Text("Explore what's new")
-                        .font(.title2)
-                        .fontWeight(.bold)
-                    Spacer()
+        NavigationStack {
+            ScrollView {
+                VStack {
+                    HStack {
+                        Text("Explore what's new")
+                            .font(.title2)
+                            .fontWeight(.bold)
+                        Spacer()
+                    }
+                    ForEach(sampleData) { cardData in
+                        DiscoverCardView(
+                            imageUrl: cardData.imageURL,
+                            title: cardData.title,
+                            caption: cardData.caption,
+                            buttonType: cardData.buttonText
+                        )
+                    }
                 }
-                ForEach(0..<4) { _ in
-                    DiscoverCardView(
-                        imageUrl: "https://i.imgflip.com/9e4vwk.jpg",
-                        title: "Scan to Win is on!",
-                        caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                        buttonType: "Scan now"
-                    )
-                }
+                .padding()
+                //.padding(.top, 0)
             }
-            .padding()
+            .background(.tan)
         }
-        .background(.tan)
+        .navigationTitle("Discover")
+        .navigationBarTitleDisplayMode(.automatic)
     }
 }
 
