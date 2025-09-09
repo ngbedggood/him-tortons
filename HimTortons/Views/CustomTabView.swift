@@ -20,7 +20,7 @@ struct CustomTabView: View {
             ZStack {
                 switch selectedTab {
                 case .home:
-                    Text("Home")
+                    HomeView()
                 case .scan:
                     Text("Scan")
                 case .discover:

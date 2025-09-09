@@ -34,6 +34,7 @@ struct DiscoverCardView: View {
                     print("Button pressed.")
                 } label : {
                     Text(buttonType)
+                        .font(.subheadline)
                         .fontWeight(.bold)
                         .padding(12)
                         .background(
