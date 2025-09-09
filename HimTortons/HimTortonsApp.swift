@@ -12,6 +12,7 @@ struct HimTortonsApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .tint(.teal)
         }
     }
 }

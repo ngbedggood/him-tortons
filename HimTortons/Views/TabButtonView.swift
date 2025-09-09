@@ -30,7 +30,7 @@ struct TabButtonView: View {
             .opacity(isPressed ? 0.6 : 1)
         }
         .foregroundColor(selectedTab == tab ? .teal : .black)
-        .padding(.vertical, 8)
+        //.padding(.vertical, 8)
         .frame(maxWidth: .infinity)
         .contentShape(Rectangle())
         .gesture(
@@ -43,6 +43,7 @@ struct TabButtonView: View {
                     selectedTab = tab
                 }
         )
+        //.border(.red, width: 2)
     }
 }
 

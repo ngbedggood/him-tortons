@@ -22,16 +22,17 @@ struct CustomTabView: View {
                 case .home:
                     Text("Home")
                 case .scan:
-                    Text("Home")
+                    Text("Scan")
                 case .discover:
-                    Text("Home")
+                    DiscoverView()
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+            
 
             // Custom tab bar
             HStack {
-                HStack{
+                HStack(spacing: 0){
                     TabButtonView(
                         tab: .home,
                         icon: "house.fill",
@@ -53,12 +54,12 @@ struct CustomTabView: View {
                 }
                 .frame(maxWidth: 320)
             }
-            
             //.padding()
             .frame(maxWidth: .infinity)
             .background(.white)
 
         }
+        
 
     }
 }
