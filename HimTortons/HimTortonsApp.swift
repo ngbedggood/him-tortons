@@ -13,6 +13,7 @@ struct HimTortonsApp: App {
         WindowGroup {
             ContentView()
                 .tint(.teal)
+                .preferredColorScheme(.light)
         }
     }
 }

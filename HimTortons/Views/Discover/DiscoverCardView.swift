@@ -19,7 +19,7 @@ struct DiscoverCardView: View {
             AsyncImage(url: URL(string: imageUrl)) { image in
                 image.resizable()
             } placeholder: {
-                Color.red
+                Color.gray.opacity(0.5)
             }
             .scaledToFill()
             .frame(height: 150)

@@ -44,7 +44,7 @@ struct HomeView: View {
                             HorizontalScrollCardView(
                                 title: "NEW Protein Lattes",
                                 caption: "Order now and get 17-20g of protein per Medium Hot or Iced Protein Latte.",
-                                image: Image(systemName: "cup.and.saucer.fill")
+                                image: Image(systemName: "takeoutbag.and.cup.and.straw.fill")
                             )
                             HorizontalScrollCardView(
                                 title: "Discover",

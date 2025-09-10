@@ -56,7 +56,7 @@ struct CustomTabView: View {
             }
             //.padding()
             .frame(maxWidth: .infinity)
-            .background(.white)
+
 
         }
         
