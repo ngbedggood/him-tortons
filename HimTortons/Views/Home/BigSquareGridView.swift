@@ -35,7 +35,7 @@ struct BigSquareGridView: View {
             }
             .padding()
             .background(.white)
-            .cornerRadius(16)
+            .cornerRadius(12)
             .aspectRatio(1, contentMode: .fit)
             .shadow(color: Color.black.opacity(0.05), radius: 32)
             
@@ -54,7 +54,9 @@ struct BigSquareGridView: View {
                     Text("Points")
                         .font(.caption)
                 }
-                .padding()
+                .padding(8)
+                Spacer()
+                
                 
                 Text("Redeem your points for a reward!")
                     .font(.caption)
@@ -63,7 +65,7 @@ struct BigSquareGridView: View {
             .frame(maxHeight: .infinity)
             .padding()
             .background(.white)
-            .cornerRadius(16)
+            .cornerRadius(12)
             .aspectRatio(1, contentMode: .fit)
             .shadow(color: Color.black.opacity(0.05), radius: 32)
         }

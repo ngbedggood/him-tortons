@@ -22,7 +22,6 @@ struct HomeView: View {
                         .fill(.tan)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                 }
-                .ignoresSafeArea()
                 VStack(spacing: 0) {
                     HStack {
                         VStack(alignment: .leading){
@@ -33,9 +32,9 @@ struct HomeView: View {
                         .fontWeight(.bold)
                         Spacer()
                     }
-                    .padding()
+                    .padding([.leading, .bottom], 16)
                     ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 16) {
+                        HStack(spacing: 12) {
                             HorizontalScrollCardView(
                                 title: "Scan to Win is on!",
                                 caption: "Every scan is a chance to win your share of the grand prize: 10M points.",
@@ -52,17 +51,21 @@ struct HomeView: View {
                                 image: Image(systemName: "cup.and.saucer.fill")
                             )
                         }
+                        .padding(.leading, 16)
                     }
-                    .padding(.leading, 16)
+                    //.padding(.leading, 16)
                     
                     BigSquareGridView(userPoints: 698)
                     
                     SmallSquareGridView()
+                        .padding([.leading, .trailing], 16)
                 }
+                
                 //.background(.red)
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

@@ -33,7 +33,7 @@ struct HorizontalScrollCardView: View {
             Image(systemName: "chevron.right")
         }
         .padding()
-        .frame(width: 320, height: 120)
+        .frame(width: 310, height: 110)
         .background(.white)
         .cornerRadius(16)
         .shadow(color: Color.black.opacity(0.05), radius: 32)

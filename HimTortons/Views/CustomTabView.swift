@@ -52,7 +52,8 @@ struct CustomTabView: View {
                         selectedTab: $selectedTab
                     )
                 }
-                .frame(maxWidth: 320)
+                .frame(maxWidth: .infinity)
+                .padding([.leading, .trailing], 32)
             }
             //.padding()
             .frame(maxWidth: .infinity)

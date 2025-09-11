@@ -28,10 +28,10 @@ struct SmallSquareGridView: View {
     ]
     
     let columns = [
-            GridItem(.flexible()),
-            GridItem(.flexible()),
-            GridItem(.flexible()),
-            GridItem(.flexible())
+            GridItem(.flexible(), spacing: 0),
+            GridItem(.flexible(), spacing: 0),
+            GridItem(.flexible(), spacing: 0),
+            GridItem(.flexible(), spacing: 0)
         ]
     
     var body: some View {
@@ -47,22 +47,22 @@ struct SmallSquareGridView: View {
                             .frame(width: 50, height: 50)
                         
                     }
-                    .padding(8)
+                    .padding(6)
                     .background(.white)
-                    .cornerRadius(16)
+                    .cornerRadius(12)
                     .aspectRatio(1, contentMode: .fit)
                     .shadow(color: Color.black.opacity(0.05), radius: 32)
                     
                     Text(item.itemName)
                         .font(.caption)
                         .fontWeight(.bold)
+                        .padding(.top, 4)
                     Spacer()
                 }
             }
             
         }
         .multilineTextAlignment(.center)
-        .padding()
     }
 }
 
