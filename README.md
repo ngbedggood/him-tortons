@@ -4,16 +4,16 @@ Running through recreating a mockup of the Tim Hortons mobile app. The general i
 
 ## Home View
 
-<p align="center">
-  <figure style="display:inline-block; margin: 0 10px; text-align:center;">
-    <figcaption><b>Him Tortons</b></figcaption>
-    <img src="screenshots/ht-home.png" width="240"/>
-  </figure>
-  <figure style="display:inline-block; margin: 0 10px; text-align:center;">
-    <figcaption><b>Tim Hortons</b></figcaption>
-    <img src="screenshots/th-home.jpeg" width="240"/>
-  </figure>
-</p>
+<table>
+  <tr>
+    <td>Him Tortons</td>
+     <td>Tim Hortons</td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/ht-home.png" width=270></td>
+    <td><img src="screenshots/th-home.jpeg" width=270></td>
+  </tr>
+ </table>
 
 ## Scan View
 
@@ -21,13 +21,13 @@ Coming soon
 
 ## Discover View
 
-<p align="center">
-  <figure style="display:inline-block; margin: 0 10px; text-align:center;">
-    <figcaption><b>Him Tortons</b></figcaption>
-    <img src="screenshots/ht-discover.png" width="240"/>
-  </figure>
-  <figure style="display:inline-block; margin: 0 10px; text-align:center;">
-    <figcaption><b>Tim Hortons</b></figcaption>
-    <img src="screenshots/th-discover.jpeg" width="240"/>
-  </figure>
-</p>
+<table>
+  <tr>
+    <td>Him Tortons</td>
+     <td>Tim Hortons</td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/ht-discover.png" width=270></td>
+    <td><img src="screenshots/th-discover.jpeg" width=270></td>
+  </tr>
+ </table>
