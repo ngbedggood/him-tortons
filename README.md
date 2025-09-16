@@ -1,6 +1,6 @@
 # Him Tortons
 
-Running through recreating a mockup of the Tim Hortons mobile app. The general idea is to apply what I've learnt so far to break down and understand another app's layout visually and figure out how a "real app" is made.
+Running through recreating a mockup of the Canadian coffee chain Tim Hortons mobile app. The general idea is to apply what I've learnt so far to break down and understand another app's layout visually and figure out how a "real app" is made.
 
 ## Home View
 
