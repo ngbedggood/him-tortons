@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ScanView: View {
     var body: some View {
-        Text("This is the scan view.")
+        GiftCardView()
+            .padding()
     }
 }
 
