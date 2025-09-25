@@ -22,7 +22,7 @@ struct CustomTabView: View {
                 case .home:
                     HomeView()
                 case .scan:
-                    Text("Scan")
+                    ScanView()
                 case .discover:
                     DiscoverView()
                 }
